@@ -159,5 +159,9 @@
   "npm:isarray@0.0.1": {},
   "github:jspm/nodelibs-module@0.1.0": {},
   "npm:events@1.0.2": {},
-  "github:systemjs/plugin-css@0.1.19": {}
+  "github:systemjs/plugin-css@0.1.19": {},
+  "github:frankwallis/plugin-typescript@2.2.2": {
+    "typescript": "npm:typescript@^1.6.2"
+  },
+  "npm:typescript@1.6.2": {}
 }
