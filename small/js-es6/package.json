@@ -7,10 +7,6 @@
   ],
   "author": "Peter Juras",
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.13.3",
-    "jspm": "^0.16.15"
-  },
   "jspm": {
     "directories": {
       "packages": "../jspm_packages"
