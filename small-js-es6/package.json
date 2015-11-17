@@ -13,7 +13,7 @@
   },
   "jspm": {
     "directories": {
-      "baseURL": "./"
+      "packages": "../jspm_packages"
     },
     "dependencies": {
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
