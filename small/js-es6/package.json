@@ -5,6 +5,9 @@
   "keywords": [
     "react"
   ],
+  "scripts": {
+    "bundle": "jspm bundle-sfx js-es6/index.js bundled/index.js --minify"
+  },
   "author": "Peter Juras",
   "license": "MIT",
   "jspm": {

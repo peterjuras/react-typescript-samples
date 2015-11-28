@@ -4,11 +4,11 @@ import * as ReactDOM from 'react-dom';
 const heros = [
   {
     name: 'Rey',
-    image: 'images/rey.webp',
+    image: 'images/rey.png',
     description: 'Rey is a resilient survivor, a scavenger toughened by a lifetime of dealing with the cutthroats of the harsh desert world of Jakku.'
   }, {
     name: 'Kylo Ren',
-    image: 'images/kylo.webp',
+    image: 'images/kylo.png',
     description: 'His lightsaber is constructed by himself, a dangerous and ragged design unlike that of a typical lightsaber.'
   }
 ];
