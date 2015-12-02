@@ -5,7 +5,7 @@ const heros = [
   {
     name: 'Rey',
     image: '../../static/images/starwars/rey.png',
-    description: 'Rey is a resilient survivor, a scavenger toughened by a lifetime of dealing with the cutthroats of the harsh desert world of Jakku.'
+    descrption: 'Rey is a resilient survivor, a scavenger toughened by a lifetime of dealing with the cutthroats of the harsh desert world of Jakku.'
   }, {
     name: 'Kylo Ren',
     image: '../../static/images/starwars/kylo.png',
