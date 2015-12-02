@@ -1,0 +1,31 @@
+{
+  "name": "react-ts",
+  "version": "1.0.0",
+  "description": "Small React examples with TypeScript",
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "Peter Juras",
+  "license": "MIT",
+  "jspm": {
+    "directories": {
+      "packages": "static/jspm_packages"
+    },
+    "configFile": "static/config.js",
+    "dependencies": {
+      "lodash": "npm:lodash@^3.10.1",
+      "material-ui": "npm:material-ui@^0.13.4",
+      "react-tap-event-plugin": "npm:react-tap-event-plugin@^0.2.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "react": "npm:react@^0.14.3",
+      "react-dom": "npm:react-dom@^0.14.2",
+      "ts": "github:frankwallis/plugin-typescript@^2.2.2",
+      "tsx": "github:frankwallis/plugin-typescript@^2.2.2"
+    }
+  }
+}
