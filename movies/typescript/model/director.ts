@@ -6,4 +6,8 @@ export default class Director {
 
   firstname: string;
   lastname: string;
+
+  getStyledName() {
+    return `by ${this.firstname} ${this.lastname}`;
+  }
 }
