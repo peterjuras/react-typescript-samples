@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "compileOnSave": false,
+  "files": [
+    "index.tsx",
+    "movies/typescript/typings/tsd.d.ts"
+  ]
+}

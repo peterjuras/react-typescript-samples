@@ -1223,6 +1223,7 @@ declare namespace __MaterialUI {
 
         interface TableHeaderColumnProps extends React.Props<TableHeaderColumn> {
             columnNumber?: number;
+            colSpan?: string;
             onClick?: (e: React.MouseEvent, column: number) => void;
             tooltip?: string;
             tooltipStyle?: React.CSSProperties;
@@ -1750,7 +1751,7 @@ declare module 'material-ui/lib/overlay' {
 
 declare module 'material-ui/lib/paper' {
     import Paper = __MaterialUI.Paper;
-    export = Paper;
+    export default Paper;
 }
 
 declare module 'material-ui/lib/radio-button' {
@@ -1880,37 +1881,37 @@ declare module 'material-ui/lib/tabs/tabs' {
 
 declare module 'material-ui/lib/table/table' {
     import Table = __MaterialUI.Table.Table;
-    export = Table;
+    export default Table;
 }
 
 declare module 'material-ui/lib/table/table-body' {
     import TableBody = __MaterialUI.Table.TableBody;
-    export = TableBody;
+    export default TableBody;
 }
 
 declare module 'material-ui/lib/table/table-footer' {
     import TableFooter = __MaterialUI.Table.TableFooter;
-    export = TableFooter;
+    export default TableFooter;
 }
 
 declare module 'material-ui/lib/table/table-header' {
     import TableHeader = __MaterialUI.Table.TableHeader;
-    export = TableHeader;
+    export default TableHeader;
 }
 
 declare module 'material-ui/lib/table/table-header-column' {
     import TableHeaderColumn = __MaterialUI.Table.TableHeaderColumn;
-    export = TableHeaderColumn;
+    export default TableHeaderColumn;
 }
 
 declare module 'material-ui/lib/table/table-row' {
     import TableRow = __MaterialUI.Table.TableRow;
-    export = TableRow;
+    export default TableRow;
 }
 
 declare module 'material-ui/lib/table/table-row-column' {
     import TableRowColumn = __MaterialUI.Table.TableRowColumn;
-    export = TableRowColumn;
+    export default TableRowColumn;
 }
 
 declare module 'material-ui/lib/theme-wrapper' {
