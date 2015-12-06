@@ -9,7 +9,7 @@ var MovieCard = React.createClass({
       <Card className="movie-card">
         <CardMedia overlay={<CardTitle
             title={this.props.movie.name}
-            subtitle={"by " + this.props.movie.director.firstname + ' ' + this.props.movie.director.lastname} />}>
+            subtitle={this.props.movie.director.getStyledName()} />}>
           <img src={'../../static/images/movies/' + this.props.movie.name + '.jpg'} />
         </CardMedia>
       </Card>

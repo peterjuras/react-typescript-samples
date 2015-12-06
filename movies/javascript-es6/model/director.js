@@ -3,6 +3,10 @@ class Director {
     this.firstname = firstname;
     this.lastname = lastname;
   }
+
+  getStyledName() {
+    return `by ${this.firstname} ${this.lastname}`;
+  }
 }
 
 export default Director;
