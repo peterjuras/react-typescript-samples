@@ -9,22 +9,27 @@
 .hero-container {
   text-align: center;
   color: white;
-  max-width: 40%;
   margin: 0 auto;
 }
 .hero-title {
   font-family: 'StarJedi';
   color: #FFE62A;
   font-size: 4.5em;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 100px;
 }
 .hero-desc {
   text-align: justify;
   font-family: 'SerifGothic';
   font-size: 25px;
+  max-width: 40%;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
   text-shadow: 0px 0px 10px black;
-  height: 350px;
 }
 .hero-img {
   background-size: cover;
@@ -39,6 +44,7 @@
   background-color: rgba(0, 0, 0, 0.298039);
   cursor: pointer;
   font-family: SerifGothic, serif;
+  max-width: 40%;
   font-size: 15px;
   height: 36px;
   line-height: 36px;
