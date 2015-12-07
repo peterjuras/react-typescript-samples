@@ -12,12 +12,14 @@ This repo contains sample [React](https://facebook.github.io/react/) apps. Each 
 2. Serve the root folder with a webserver of your choice and you can skip to step 6. No idea what I'm talking about? Continue reading!
 3. Download and install [node](https://nodejs.org/en/download/) and npm (node includes npm)
 4. Install browsersync as a global module by running the following command in a command line window:
-```bash
-npm install -g browser-sync
-```
+
+    ```
+    npm install -g browser-sync
+    ```
 5. Run browsersync from the root folder of this repo by typing:
-```bash
-browser-sync start --server
-```
+
+    ```
+    browser-sync start --server
+    ```
 6. Open a web browser and go to localhost:3000 (or your configurated port)
 7. Have fun browsing the samples!
