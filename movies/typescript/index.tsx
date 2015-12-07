@@ -11,27 +11,27 @@ injectTapEventPlugin();
 const users = [
   new User('Peter', [
     new Movie('Ant-Man',
-      new Director('Peyton', 'Reed')),
+      new Director('Peyton Reed')),
     new Movie('The Martian',
-      new Director('Ridley', 'Scott')),
+      new Director('Ridley Scott')),
     new Movie('Guardians of the Galaxy',
-      new Director('James', 'Gunn')),
+      new Director('James Gunn')),
     new Movie('The Maze Runner',
-      new Director('Wes', 'Ball')),
+      new Director('Wes Ball')),
     new Movie('Tomorrowland',
-      new Director('Brad', 'Bird'))
+      new Director('Brad Bird'))
   ]),
   new User('Max', [
     new Movie('Deadpool',
-      new Director('Tim', 'Miller')),
+      new Director('Tim Miller')),
     new Movie('Ex Machina',
-      new Director('Alex', 'Garland')),
+      new Director('Alex Garland')),
     new Movie('The Good Dinosaur',
-      new Director('Peter', 'Sohn')),
+      new Director('Peter Sohn')),
     new Movie('Inside Out',
-      new Director('Pete', 'Docter')),
+      new Director('Pete Docter')),
     new Movie('Home Alone',
-      new Director('Chris', 'Columbus'))
+      new Director('Chris Columbus'))
   ]),
 ];
 
