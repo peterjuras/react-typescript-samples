@@ -15,47 +15,43 @@ const samples = [
   'Movies'
 ];
 
-class SampleComponent extends React.Component<{ sample: string, key?: string}, {}> {
-  render() {
-    const columns = _(['JavaScript', 'JavaScript-ES6', 'TypeScript'])
-      .map(column => (
-        <TableRowColumn key={ _.uniqueId('sample-flavor') } style={{textAlign: 'center'}}>
-          <a href={`${this.props.sample.toLowerCase()}/${column.toLowerCase()}`}>{column}</a>
-        </TableRowColumn>
-      )).value();
-    return (
-      <TableRow>
-        <TableRowColumn>{this.props.sample}</TableRowColumn>
-        {columns}
-      </TableRow>
-    );
-  }
+const SampleComponent : any = (props : { sample: string, key?: string}) => {
+  const columns = _(['JavaScript', 'JavaScript-ES6', 'TypeScript'])
+    .map(column => (
+      <TableRowColumn key={ _.uniqueId('sample-flavor') } style={{textAlign: 'center'}}>
+        <a href={`${props.sample.toLowerCase()}/${column.toLowerCase()}`}>{column}</a>
+      </TableRowColumn>
+    )).value();
+  return (
+    <TableRow>
+      <TableRowColumn>{props.sample}</TableRowColumn>
+      {columns}
+    </TableRow>
+  );
 }
 
-class MainComponent extends React.Component<{ samples: string[] }, {}> {
-  render() {
-    const sampleRows = _(samples)
-      .map(sample => <SampleComponent key={ _.uniqueId('sample-row') } sample={ sample } />)
-      .value();
-    return (
-      <div>
-        <AppBar title="React with TypeScript samples" showMenuIconButton={false}/>
-        <Paper className="table-paper">
-          <Table selectable={false}>
-            <TableHeader adjustForCheckbox={false} displaySelectAll={false}>
-              <TableRow>
-                <TableHeaderColumn>Sample</TableHeaderColumn>
-                <TableHeaderColumn colSpan="3" style={{ textAlign: 'center' }} >Flavor</TableHeaderColumn>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              { sampleRows }
-            </TableBody>
-          </Table>
-        </Paper>
-      </div>
-    );
-  }
+const MainComponent : any = (props : { samples: string[] }) => {
+  const sampleRows = _(samples)
+    .map(sample => <SampleComponent key={ _.uniqueId('sample-row') } sample={ sample } />)
+    .value();
+  return (
+    <div>
+      <AppBar title="React with TypeScript samples" showMenuIconButton={false}/>
+      <Paper className="table-paper">
+        <Table selectable={false}>
+          <TableHeader adjustForCheckbox={false} displaySelectAll={false}>
+            <TableRow>
+              <TableHeaderColumn>Sample</TableHeaderColumn>
+              <TableHeaderColumn colSpan="3" style={{ textAlign: 'center' }} >Flavor</TableHeaderColumn>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            { sampleRows }
+          </TableBody>
+        </Table>
+      </Paper>
+    </div>
+  );
 }
 
 render(<MainComponent samples={samples} />, document.getElementById('content'));
